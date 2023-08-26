@@ -1,0 +1,275 @@
+Background
+
+An undirected social network of frequent associations between 62 dolphins in a community living off Doubtful Sound, New Zealand, as compiled by Lusseau et al. (2003).
+
+References
+
+D. Lusseau, K. Schneider, O. J. Boisseau, P. Haase, E. Slooten, and S. M. Dawson, The bottlenose dolphin community of Doubtful Sound features a large proportion of long-lasting associations, Behavioral Ecology and Sociobiology 54, 396-405 (2003).
+
+History
+
+Original data obtained from: http://www-personal.umich.edu/~mejn/netdata/
+
+
+
+Loading the Dataset:
+
+Read the GraphML file containing the dolphin social network data.
+
+Dataset Overview and Structure:
+
+Print basic information about the graph such as the number of nodes and edges.
+
+Data Visualization:
+
+Utilize a network visualization library (like NetworkX or dash-cytoscape) to display an interactive visualization of the dolphin social network.
+
+Network Characteristics:
+
+Calculate and display basic network characteristics like density, transitivity, average degree, and diameter.
+Create heatmap-style visualizations to show relationships between different network characteristics.
+
+Community Detection:
+
+Apply community detection algorithms such as Louvain or CDLIB to identify communities within the dolphin social network.
+Visualize detected communities using a networkmap or hiveplot.
+
+Centrality Measures:
+
+Calculate various centrality measures such as degree centrality, betweenness centrality, closeness centrality, and eigenvector centrality.
+Compare and visualize these centrality measures using scatter plots, violin plots, or bubble charts.
+
+Assortativity and Correlation:
+
+Calculate assortativity coefficient to understand the preference for associations between dolphins of similar centrality.
+Visualize correlations between centrality measures using correlation matrix plots.
+
+Network Visualization Enhancement:
+
+Utilize directed graph layouts to showcase the nature of associations between dolphins.
+Experiment with interactive layouts that consider node sizes to represent centrality measures.
+
+Power Law Distribution and Fitting:
+
+Analyze the degree distribution of the dolphin social network to assess if it follows a power law distribution.
+Fit a power law curve and visualize it overlaid on the histogram.
+
+Temporal Networks and Dynamics Modeling:
+
+If available, analyze temporal changes in the network to understand how associations evolve over time.
+Create dynamic network visualizations or animations to showcase temporal changes.
+
+Network Embedding and Multilayer Networks:
+
+Apply dimensionality reduction techniques to embed the network in a 2D space.
+Visualize the multilayer aspects of the network, if applicable.
+
+Final Presentation and Visualization:
+
+Create an interactive dashboard using libraries like Bokeh or dash-cytoscape to showcase various visualizations and insights.
+Utilize specialized graph visualization libraries (like Graphviz) for certain types of plots.
+
+
+===================================================================================================================
+Data Visualization:
+
+Utilize CircosPlots or ArcPlots to visually represent the distribution of users by country, showing connections between countries and their artist preferences.
+
+Network Characteristics:
+
+Create heatmap-style visualizations to show the relationships between different network characteristics like density, transitivity, and average degree.
+Utilize a hiveplot to visualize the clustering coefficient distribution and highlight nodes with high clustering coefficients.
+
+Centrality Measures:
+
+Plot scatter plots or bubble charts to show the correlation between different centrality measures.
+Create violin plots or box plots to compare the distribution of centrality measures across different nodes.
+
+Community Detection:
+
+Apply a networkmap visualization to represent the detected communities and their interconnections.
+Experiment with different layouts to enhance community visibility and node grouping.
+
+Assortativity and Correlation:
+
+Utilize correlation matrix plots to display the relationships between various network measures.
+Incorporate a heatmap to show the correlations between centrality measures.
+
+Network Visualization Enhancement:
+
+Incorporate Chord Diagrams or Sankey Diagrams to visualize the flow of artist preferences among users and communities.
+Use network animation to show the evolution of the network over time or iterations.
+
+Directed Networks and Link Prediction:
+
+Visualize directed edges using directed graph layouts or force-directed layouts with arrow indicators.
+Create dynamic network visualizations to showcase link prediction results over time.
+
+Power Law Distribution and Fitting:
+
+Utilize a log-log plot to visualize the power law distribution and its fit.
+Create a histogram overlaid with a power law distribution curve for comparison.
+
+Temporal Networks and Dynamics Modeling:
+
+Utilize a dynamic graph layout to visualize how the network evolves over time.
+Create interactive animations to show the temporal changes in centrality measures.
+
+Network Embedding and Multilayer Networks:
+
+Utilize dimensionality reduction techniques like t-SNE or UMAP to create 2D embeddings of the network.
+Visualize multilayer networks using stacked or aligned layouts to show the relationships between layers.
+
+Final Presentation and Visualization:
+
+Incorporate dashboards with interactive plots using tools like Bokeh or dash-cytoscape.
+Experiment with WebGL-powered visualizations for large-scale networks.
+
+==================================================================================================================
+
+Introduction
+
+Background and Context
+Objective and Scope of the Analysis
+Importance of Dolphin Social Networks
+Dataset Overview
+Table Of Contents
+
+Data Exploration and Preprocessing
+
+Loading and Understanding the Dataset
+Overview of Graph Structure
+Handling Missing or Incomplete Data
+Data Visualization Techniques
+Network Visualization
+
+Exploring Interactive Network Visualization Libraries
+Visualizing the Dolphin Social Network
+Node Highlighting Based on Centrality Measures
+Network Characteristics
+
+Calculating Basic Network Characteristics
+Density, Transitivity, and Average Degree
+Diameter and Path Length
+Heatmap Visualizations for Network Characteristics
+Community Detection
+
+Applying Louvain Community Detection Algorithm
+Identifying and Visualizing Communities
+Analyzing Community Characteristics
+Centrality Measures
+
+Computing Various Centrality Measures
+Visualizing Centrality Measures Comparatively
+Correlation Analysis of Centrality Measures
+Assortativity and Correlation
+
+Calculating Assortativity Coefficient
+Visualizing Correlations Between Centrality Measures
+Interpreting Association Patterns
+Network Visualization Enhancement
+
+Directed Graph Layouts for Association Clarity
+Experimenting with Interactive Node Sizes
+Dynamic Visualization of Centrality Measures
+Power Law Distribution and Fitting
+
+Analyzing Degree Distribution
+Power Law Distribution Evaluation
+Visualization of Power Law Fit
+Temporal Networks and Dynamics Modeling
+
+Exploring Temporal Changes in the Network
+Dynamic Network Visualizations
+Understanding Network Evolution
+Network Embedding and Multilayer Networks
+
+Applying Dimensionality Reduction Techniques
+Visualizing Multilayer Aspects of the Network
+Final Presentation and Visualization
+
+Interactive Dashboard Creation
+Integration of Various Visualizations
+Graph Visualization Libraries for Advanced Plots
+Conclusion
+
+Summary of Findings and Insights
+Implications of the Analysis
+Recommendations for Further Research
+Acknowledgments and References
+
+============================================================================================================
+
+-Introduction
+Background and Context
+Objective and Scope of the Analysis
+Importance of Dolphin Social Networks
+Dataset Overview
+
+-Table Of Contents
+
+-Data Exploration and Preprocessing
+Loading and Understanding the Dataset
+Overview of Graph Structure
+Data Visualization Techniques
+
+-Network Characteristics
+Calculating Basic Network Characteristics
+Density, Transitivity, and Average Degree
+Diameter and Path Length
+
+-Community Detection
+Applying Louvain Community Detection Algorithm
+Identifying and Visualizing Communities
+Analyzing Community Characteristics
+
+-Centrality Measures
+Computing Various Centrality Measures
+Visualizing Centrality Measures Comparatively
+Correlation Analysis of Centrality Measures
+Centrality Distribution:
+Degree Correlation Plot
+Node Degree vs. Centrality
+
+Community Composition and Social Roles:
+You can calculate the degree centrality of each dolphin within their respective community and identify the dolphins with the highest degree centrality. These highly central dolphins could be considered as potential "connectors" within the network, bridging different communities.
+
+Social Roles and Influence:
+You can calculate various centrality measures, such as betweenness centrality or eigenvector centrality, to identify dolphins that play important roles within their community or the overall network. Visualize these measures to highlight influential dolphins or communities.
+
+
+Assortativity and Correlation
+Calculating Assortativity Coefficient
+Visualizing Correlations Between Centrality Measures
+Interpreting Association Patterns
+
+-Network Visualization
+Exploring Interactive Network Visualization Libraries
+Visualizing the Dolphin Social Network
+Node Highlighting Based on Centrality Measures
+
+Power Law Distribution and Fitting
+Analyzing Degree Distribution
+Power Law Distribution Evaluation
+Visualization of Power Law Fit
+
+Temporal Networks and Dynamics Modeling
+Exploring Temporal Changes in the Network
+Dynamic Network Visualizations
+Understanding Network Evolution
+
+Network Embedding and Multilayer Networks
+Applying Dimensionality Reduction Techniques
+Visualizing Multilayer Aspects of the Network
+
+Final Presentation and Visualization
+Interactive Dashboard Creation
+Integration of Various Visualizations
+Graph Visualization Libraries for Advanced Plots
+
+Conclusion
+Summary of Findings and Insights
+Implications of the Analysis
+Recommendations for Further Research
+Acknowledgments and References
+
