@@ -6,7 +6,7 @@ Welcome to my Data Science Projects repository! This repository contains a colle
 
 ## Project Descriptions
 
-1. **Project 1: Medical Insurance Cost**
+### 1. **Project 1: Medical Insurance Cost**
    
   - **Description:**
 
@@ -24,7 +24,7 @@ Throughout this project, we will follow a structured approach, including data ex
    - Link: [Project 1](https://github.com/kostas696/Portfolio/tree/main/Medical_Insurance_Cost)
      
 
-2. **Project 2: Predicting Customer Churn in an Iranian Telecom Company**
+### 2. **Project 2: Predicting Customer Churn in an Iranian Telecom Company**
    
   - **Description:**
 
@@ -37,7 +37,7 @@ The main objective of this analysis is to build a predictive model using logisti
    - Link: [Project 2](https://github.com/kostas696/Portfolio/tree/main/Predicting_Customer_Churn_in_an_Iranian_Telecom_Company)
 
      
-3. **Project 3: Dolphin Social Network Analysis and Visualization**
+### 3. **Project 3: Dolphin Social Network Analysis and Visualization**
    
   - **Description:**
 
