@@ -1,6 +1,6 @@
 # Awesome Data Science Projects
 
-![Project Image or Logo]([https://your-image-url.com](https://github.com/kostas696/Portfolio/blob/main/Medical_Insurance_Cost/photos/12.JPG))
+![Project Image or Logo](https://github.com/kostas696/Portfolio/blob/main/Medical_Insurance_Cost/photos/12.JPG)
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
