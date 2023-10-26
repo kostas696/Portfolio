@@ -1,5 +1,7 @@
 # Awesome Data Science Projects
 
+![Project Image or Logo]([https://your-image-url.com](https://github.com/kostas696/Portfolio/blob/main/Medical_Insurance_Cost/photos/12.JPG))
+
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Welcome to my Data Science Projects repository! This repository contains a collection of data science projects that I've worked on, showcasing my skills and expertise in the field.
