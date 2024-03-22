@@ -54,7 +54,7 @@ The primary objective of this analysis is to delve into the social network dynam
 "How do dolphins form associations and interact within their community, and what insights can these interactions provide about their social dynamics?"
 
    - Link: [Project 3](https://github.com/kostas696/Portfolio/tree/main/dolphins_network_analysis)
-   - 
+
 
 ### 4. **Project 4: Investigating the Impact of Climate Change on Bird Populations: A Multifaceted Analysis**
    
@@ -75,7 +75,8 @@ The primary objective of this analysis is to investigate the impact of climate c
 "Can we build a predictive model (e.g., logistic regression) to estimate the likelihood of observing a certain number of individuals of a species based on climate variables? How well can the model predict changes in bird populations?"
 
    - Link: [Project 4]()
-   - 
+
+
 
 ### 5. **Project 5: Deploying Predictive Model for New York Housing Prices**
    
@@ -108,7 +109,7 @@ In recent years, the cab industry in the United States has experienced significa
 
 The primary objective of this project is to provide actionable insights to XYZ, aiding them in identifying the most suitable cab company for potential investment. To achieve this goal, we will conduct a comprehensive analysis of multiple datasets spanning the period from January 31, 2016, to December 31, 2018.
 
-   - Link: [Project 6](https://github.com/kostas696/Portfolio/tree/main/dolphins_network_analysis)
+   - Link: [Project 6]()
 
 
 
