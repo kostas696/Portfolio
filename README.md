@@ -54,3 +54,62 @@ The primary objective of this analysis is to delve into the social network dynam
 "How do dolphins form associations and interact within their community, and what insights can these interactions provide about their social dynamics?"
 
    - Link: [Project 3](https://github.com/kostas696/Portfolio/tree/main/dolphins_network_analysis)
+   - 
+
+### 4. **Project 4: Investigating the Impact of Climate Change on Bird Populations: A Multifaceted Analysis**
+   
+  - **Description:**
+
+Climate change, driven largely by human activities such as greenhouse gas emissions, is a pressing global challenge with far-reaching consequences for ecosystems and biodiversity.
+
+Among the numerous species affected by these changes, birds play a crucial role as bioindicators and ecological indicators. Their diverse behaviors, migratory patterns, and sensitivity to environmental conditions make them valuable subjects for studying the impacts of climate change on wildlife.
+
+Identifying vulnerable species and regions can help prioritize targeted conservation strategies and foster a deeper comprehension of ecosystem dynamics in the context of changing climates.
+
+  - **Objective of the Analysis:**
+
+The primary objective of this analysis is to investigate the impact of climate change on bird populations using logistic regression. Leveraging the rich and comprehensive bird occurrence data available from GBIF and relevant climate variables, we aim to discern patterns and understand how changing climatic conditions influence the distribution and abundance of bird species.
+
+  - **Research question:**
+
+"Can we build a predictive model (e.g., logistic regression) to estimate the likelihood of observing a certain number of individuals of a species based on climate variables? How well can the model predict changes in bird populations?"
+
+   - Link: [Project 4]()
+   - 
+
+### 5. **Project 5: Deploying Predictive Model for New York Housing Prices**
+   
+  - **Description:**
+
+Our project revolves around the development and deployment of a predictive model designed to estimate property prices in different neighborhoods across New York City. Leveraging a comprehensive dataset encompassing various property attributes and historical transaction data, we employ machine learning algorithms to build an accurate predictive model. The deployment aspect of the project involves making this model accessible via a web-based platform, allowing stakeholders to obtain property price estimates in real-time.
+
+  - **Objective of the Analysis:**
+
+The primary objective of our project is to deploy a robust predictive model for estimating housing prices in New York City. Specifically, our goals include:
+
+Developing an accurate machine learning model capable of predicting property prices based on relevant features such as location, size, and amenities. Implementing a user-friendly web interface for accessing the deployed model, enabling stakeholders to obtain property price estimates seamlessly. Providing a valuable tool for homebuyers, sellers, investors, and other stakeholders to make informed decisions in the dynamic New York housing market.
+
+  - **Research question:**
+
+The central focus of our project centers on addressing the following research question:
+
+"How can we deploy a predictive model effectively to estimate property prices in the diverse and competitive real estate market of New York City, and how will stakeholders benefit from its implementation?"
+
+   - Link: [Project 5](https://github.com/kostas696/Portfolio/tree/main/Deploying_Predictive_Model_for_New_York_Housing_Prices)
+
+
+### 6. **Project 6: Cab Industry Analysis Project: Data Exploration, Hypothesis Testing, and Strategic Recommendations**
+   
+  - **Description:**
+
+In recent years, the cab industry in the United States has experienced significant growth, with multiple key players emerging in the market. As a result, private firms like XYZ are exploring investment opportunities within this sector. In line with their Go-to-Market (G2M) strategy, XYZ seeks to thoroughly understand the market dynamics before making any investment decisions.
+
+  - **Objective of the Analysis:**
+
+The primary objective of this project is to provide actionable insights to XYZ, aiding them in identifying the most suitable cab company for potential investment. To achieve this goal, we will conduct a comprehensive analysis of multiple datasets spanning the period from January 31, 2016, to December 31, 2018.
+
+   - Link: [Project 6](https://github.com/kostas696/Portfolio/tree/main/dolphins_network_analysis)
+
+
+
+
