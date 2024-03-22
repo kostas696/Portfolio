@@ -77,7 +77,6 @@ The primary objective of this analysis is to investigate the impact of climate c
    - Link: [Project 4]()
 
 
-
 ### 5. **Project 5: Deploying Predictive Model for New York Housing Prices**
    
   - **Description:**
@@ -109,7 +108,7 @@ In recent years, the cab industry in the United States has experienced significa
 
 The primary objective of this project is to provide actionable insights to XYZ, aiding them in identifying the most suitable cab company for potential investment. To achieve this goal, we will conduct a comprehensive analysis of multiple datasets spanning the period from January 31, 2016, to December 31, 2018.
 
-   - Link: [Project 6]()
+   - Link: [Project 6](https://github.com/kostas696/Portfolio/blob/main/Project_Cab_Industry_Analysis/code/Project_Cab_Industry_Analysis.ipynb)
 
 
 
