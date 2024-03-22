@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Estimation in New York</title>
+    <style>
+        body {
+            background-image: url('{{ url_for("static", filename="55443.jpg") }}'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1 style="text-align: center; color: #333;">House Price Estimation in New York</h1>
+        <form id="prediction-form" style="text-align: center;">
+            <label for="property-type">Type of Property:</label>
+            <select id="property-type" name="property_type">                
+                <option value="TYPE_Co-op for sale">Co-op for sale</option>
+                <option value="TYPE_Coming Soon">Coming Soon</option>
+                <option value="TYPE_Condo for sale">Condo for sale</option>
+                <option value="TYPE_Condop for sale">Condop for sale</option>
+                <option value="TYPE_Contingent">Contingent</option>
+                <option value="TYPE_For sale">For sale</option>
+                <option value="TYPE_Foreclosure">Foreclosure</option>
+                <option value="TYPE_House for sale">House for sale</option>
+                <option value="TYPE_Land for sale">Land for sale</option>
+                <option value="TYPE_Mobile house for sale">Mobile house for sale</option>
+                <option value="TYPE_Multi-family home for sale">Multi-family home for sale</option>
+                <option value="TYPE_Pending">Pending</option>
+                <option value="TYPE_Townhouse for sale">Townhouse for sale</option>
+            </select>
+            <br><br>
+            <label for="neighborhood">Neighborhood:</label>
+            <select id="neighborhood" name="neighborhood">
+                <option value="SUBLOCALITY_Arverne">Arverne</option>
+                <option value="SUBLOCALITY_Astoria">Astoria</option>
+                <option value="SUBLOCALITY_Bayside">Bayside</option>
+                <option value="SUBLOCALITY_Bedford Stuyvesant">Bedford Stuyvesant</option>
+                <option value="SUBLOCALITY_Beechhurst">Beechhurst</option>
+                <option value="SUBLOCALITY_Belle Harbor">Belle Harbor</option>
+                <option value="SUBLOCALITY_Bellerose">Bellerose</option>
+                <option value="SUBLOCALITY_Briarwood">Briarwood</option>
+                <option value="SUBLOCALITY_Brighton Beach">Brighton Beach</option>
+                <option value="SUBLOCALITY_Bronx">Bronx</option>
+                <option value="SUBLOCALITY_Brooklyn">Brooklyn</option>
+                <option value="SUBLOCALITY_Brooklyn Heights">Brooklyn Heights</option>
+                <option value="SUBLOCALITY_Brownville">Brownville</option>
+                <option value="SUBLOCALITY_Cambria Heights">Cambria Heights</option>
+                <option value="SUBLOCALITY_Canarsie">Canarsie</option>
+                <option value="SUBLOCALITY_College Point">College Point</option>
+                <option value="SUBLOCALITY_Corona">Corona</option>
+                <option value="SUBLOCALITY_Crown Heights">Crown Heights</option>
+                <option value="SUBLOCALITY_Ditmas Park">Ditmas Park</option>
+                <option value="SUBLOCALITY_Douglaston">Douglaston</option>
+                <option value="SUBLOCALITY_East Elmhurst">East Elmhurst</option>
+                <option value="SUBLOCALITY_East Flatbush">East Flatbush</option>
+                <option value="SUBLOCALITY_Elmhurst">Elmhurst</option>
+                <option value="SUBLOCALITY_Far Rockaway">Far Rockaway</option>
+                <option value="SUBLOCALITY_Floral Park">Floral Park</option>
+                <option value="SUBLOCALITY_Flushing">Flushing</option>
+                <option value="SUBLOCALITY_Forest Hills">Forest Hills</option>
+                <option value="SUBLOCALITY_Fresh Meadows">Fresh Meadows</option>
+                <option value="SUBLOCALITY_Glen Oaks">Glen Oaks</option>
+                <option value="SUBLOCALITY_Glendale">Glendale</option>
+                <option value="SUBLOCALITY_Hollis">Hollis</option>
+                <option value="SUBLOCALITY_Howard Beach">Howard Beach</option>
+                <option value="SUBLOCALITY_Jackson Heights">Jackson Heights</option>
+                <option value="SUBLOCALITY_Jamaica">Jamaica</option>
+                <option value="SUBLOCALITY_Kensington">Kensington</option>
+                <option value="SUBLOCALITY_Kew Garden Hills">Kew Garden Hills</option>
+                <option value="SUBLOCALITY_Kew Gardens">Kew Gardens</option>
+                <option value="SUBLOCALITY_Kew Gardens Hills">Kew Gardens Hills</option>
+                <option value="SUBLOCALITY_Little Neck">Little Neck</option>
+                <option value="SUBLOCALITY_Long Island City">Long Island City</option>
+                <option value="SUBLOCALITY_Malba">Malba</option>
+                <option value="SUBLOCALITY_Manhattan">Manhattan</option>
+                <option value="SUBLOCALITY_Maspeth">Maspeth</option>
+                <option value="SUBLOCALITY_Middle Village">Middle Village</option>
+                <option value="SUBLOCALITY_New Hyde Park">New Hyde Park</option>
+                <option value="SUBLOCALITY_New York">New York</option>
+                <option value="SUBLOCALITY_Old Mill Basin">Old Mill Basin</option>
+                <option value="SUBLOCALITY_Ozone Park">Ozone Park</option>
+                <option value="SUBLOCALITY_Prospect Lefferts Gardens">Prospect Lefferts Gardens</option>
+                <option value="SUBLOCALITY_Queens">Queens</option>
+                <option value="SUBLOCALITY_Queens Village">Queens Village</option>
+                <option value="SUBLOCALITY_Rego Park">Rego Park</option>
+                <option value="SUBLOCALITY_Richmond Hill">Richmond Hill</option>
+                <option value="SUBLOCALITY_Richmond Hill South">Richmond Hill South</option>
+                <option value="SUBLOCALITY_Ridgewood">Ridgewood</option>
+                <option value="SUBLOCALITY_Rockaway Park">Rockaway Park</option>
+                <option value="SUBLOCALITY_Roosevelt Island">Roosevelt Island</option>
+                <option value="SUBLOCALITY_Rosedale">Rosedale</option>
+                <option value="SUBLOCALITY_Saint Albans">Saint Albans</option>
+                <option value="SUBLOCALITY_South Ozone Park">South Ozone Park</option>
+                <option value="SUBLOCALITY_Springfield Gardens">Springfield Gardens</option>
+                <option value="SUBLOCALITY_Staten Island">Staten Island</option>
+                <option value="SUBLOCALITY_Stuyvesant Heights">Stuyvesant Heights</option>
+                <option value="SUBLOCALITY_Sunnyside">Sunnyside</option>
+                <option value="SUBLOCALITY_Whitestone">Whitestone</option>
+                <option value="SUBLOCALITY_Woodhaven">Woodhaven</option>
+                <option value="SUBLOCALITY_Woodside">Woodside</option>
+            </select>
+            <br><br>
+            <label for="property-sqft">Property Sqft:</label>
+            <input type="number" id="property-sqft" name="property_sqft" min="0">
+            <br><br>
+            <label for="bedrooms">Bedrooms:</label>
+            <input type="number" id="bedrooms" name="bedrooms" min="0">
+            <br><br>
+            <label for="baths">Baths:</label>
+            <input type="number" id="baths" name="baths" min="0">
+            <br><br>
+            <button type="submit">Compute Estimated Price</button>
+            <div id="prediction-container" style="margin-top: 20px;"></div>
+        </form>        
+    </div>
+
+    <script>
+        const form = document.getElementById('prediction-form');
+        
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            // Get the form data
+            const propertyType = document.getElementById('property-type').value;
+            const neighborhood = document.getElementById('neighborhood').value;
+            const propertySqft = document.getElementById('property-sqft').value;
+            const bedrooms = document.getElementById('bedrooms').value;
+            const baths = document.getElementById('baths').value;
+
+            // Send the data to the server using a POST request
+            fetch('/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    property_type: propertyType,
+                    neighborhood: neighborhood,
+                    property_sqft: propertySqft,
+                    bedrooms: bedrooms,
+                    baths: baths
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Log the response data to console for debugging
+                console.log(data);
+
+                // Display the prediction result if the response contains the expected key
+                if (data.hasOwnProperty('prediction_text')) {
+                    const predictionContainer = document.getElementById('prediction-container');
+                    predictionContainer.innerHTML = data.prediction_text;
+                    predictionContainer.style.textAlign = 'center'; // Center the text
+                } else {
+                    console.error('Prediction text not found in response:', data);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching prediction:', error);
+            });
+        });
+    </script>
+</body>
+</html>
