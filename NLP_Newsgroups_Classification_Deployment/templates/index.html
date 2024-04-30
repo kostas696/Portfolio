@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Category Prediction</title>
+    <style>
+        body {
+            background-image: url('{{ url_for("static", filename="1.jpg") }}'); 
+            background-size: cover;
+            background-position: center;
+            color: white; 
+            margin: 0; 
+            padding: 0; 
+            height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+        form {
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 20px;
+            border-radius: 10px;
+        }
+        textarea {
+            width: 300px; 
+            height: 200px; 
+            resize: none; 
+        }
+        input[type="submit"] {
+            background-color: #4CAF50; 
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/predict" method="post">
+        <textarea name="text" rows="5" cols="50" placeholder="Enter your text here..."></textarea><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

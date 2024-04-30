@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-image: url('{{ url_for("static", filename="2.jpg") }}');
+            background-size: cover;
+            background-position: center;
+        }
+        .result {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .result h1 {
+            margin-top: 0;
+            margin-bottom: 20px; 
+            text-align: center; 
+        }
+        .result p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result">
+        <h1>Prediction Result</h1>
+        <p><strong>Input Text:</strong> {{ text }}</p>
+        <p><strong>Predicted Category:</strong> {{ category }}</p>
+    </div>
+</body>
+</html>
