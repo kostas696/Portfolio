@@ -120,7 +120,7 @@ In this project, we tackle the task of document classification, a fundamental pr
 
 The primary objective of this project is to develop a robust document classification system using the 20 Newsgroups dataset. This dataset consists of approximately 20,000 documents, divided into 20 different newsgroups. Our goal is to train a machine learning model that can accurately classify documents into their respective newsgroups based on their content. This system has applications in various domains, including spam filtering, email routing, and sentiment analysis.
 
-   - Link: [Project 7]((https://github.com/kostas696/Portfolio/blob/main/NLP_Newsgroups_Classification_Deployment/code/NLP_Classification_Project.ipynb)
+   - Link: [Project 7](https://github.com/kostas696/Portfolio/blob/main/NLP_Newsgroups_Classification_Deployment/code/NLP_Classification_Project.ipynb)
 
 
 
